@@ -1,0 +1,20 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="bot_init" id="init" x="50" y="30">
+    <field name="ACCOUNT_TYPE">demo</field>
+    <next>
+      <block type="trade_definition_call" id="trade_call">
+        <mutation contract_type="CALL"></mutation>
+        <field name="symbol">R_100</field>
+        <field name="duration_type">m</field>
+        <field name="duration">1</field>
+        <field name="stake_type">stake</field>
+        <field name="currency">USD</field>
+        <value name="stake">
+          <block type="math_number" id="stake_num">
+            <field name="NUM">0.35</field>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>
